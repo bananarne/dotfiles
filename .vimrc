@@ -7,3 +7,5 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set nowrap
 colorscheme apprentice
 set hidden
+noremap <C-p> :Files<CR>
+noremap <C-t> :Tags<CR>
