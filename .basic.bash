@@ -1,3 +1,7 @@
+export HISTSIZE=10000
+export HISTCONTROL=ignoreboth:erasedups
+export HISTIGNORE="ls:ps:history"
+
 ftags() {
   local line
   [ -e tags ] &&
@@ -32,7 +36,7 @@ function da() {
   local cid
   cid=$(docker ps -a | sed 1d | fzf -1 -q "$1" | awk '{print $1}')
 
-  [ -n "$cid" ] && docker start "$cid" && docker attach "$cid"
+  [ -n "$cid" ] && docker start -ai "$cid"
 }
 
 # Select a running docker container to stop
