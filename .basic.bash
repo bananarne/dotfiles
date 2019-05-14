@@ -1,5 +1,5 @@
 export HISTSIZE=10000
-export HISTCONTROL=ignoreboth:erasedups
+export HISTCONTROL="ignoreboth:erasedups"
 export HISTIGNORE="ls:ps:history"
 
 ftags() {
