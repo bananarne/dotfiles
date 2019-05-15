@@ -1,4 +1,5 @@
-export HISTSIZE=10000
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
 export HISTCONTROL="ignoreboth:erasedups"
 export HISTIGNORE="ls:ps:history"
 
