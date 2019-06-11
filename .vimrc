@@ -1,5 +1,7 @@
 set termguicolors
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set cmdheight=2
+set shortmess+=IsTWxwrnml
 filetype on
 filetype plugin on
 filetype indent on

@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Ubuntu Mono 10
+font pango:DejaVu Sans Mono 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -153,10 +153,11 @@ bar {
 }
 bindsym Print exec --no-startup-id bash -c scrotclip
 bindsym $mod+c bar mode toggle
-bindsym Shift+XF86Favorites mark secret
-bindsym XF86Favorites [con_mark="secret"] move scratchpad
-bindsym $mod+XF86Favorites scratchpad show
+bindsym Shift+Pause mark secret
+bindsym Pause [con_mark="secret"] move scratchpad
+bindsym $mod+Pause scratchpad show
 bindsym XF86Tools scratchpad show
+bindsym --whole-window button6 [con_mark="secret"] move scratchpad
 new_window pixel
 #bindsym $mod+Shift+ exec "i3lock && sudo pm-suspend"
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
@@ -167,3 +168,4 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec cool-retro-term
 bindsym $mod+b border toggle
+exec pasystray
