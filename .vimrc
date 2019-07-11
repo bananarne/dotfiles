@@ -13,6 +13,8 @@ set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-i> :IndentGuidesToggle<CR>
+noremap <Left> :bn<CR>
+noremap <Right> :bp<CR>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
