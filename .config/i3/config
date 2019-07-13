@@ -162,6 +162,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 bindsym $mod+Return exec alacritty
+bindsym $mod+Control+L exec i3lock
 bindsym $mod+Shift+Return exec cool-retro-term
 bindsym $mod+b border toggle
 exec pasystray
+exec dunst
