@@ -155,13 +155,13 @@ bindsym $mod+Pause scratchpad show
 bindsym XF86Tools scratchpad show
 bindsym --whole-window button6 [con_mark="secret"] move scratchpad
 new_window pixel
-#bindsym $mod+Shift+ exec "i3lock && sudo pm-suspend"
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 bindsym $mod+Return exec alacritty
+bindsym $mod+Control+K exec bash -c "i3lock && sudo pm-suspend"
 bindsym $mod+Control+L exec i3lock
 bindsym $mod+Shift+Return exec cool-retro-term
 bindsym $mod+b border toggle
