@@ -147,7 +147,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-bindsym Print exec --no-startup-id bash -c scrotclip
+bindsym Print --release exec bash -ic scrotclip
 bindsym $mod+c bar mode toggle
 bindsym Shift+Pause mark secret
 bindsym Pause [con_mark="secret"] move scratchpad
