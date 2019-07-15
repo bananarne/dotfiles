@@ -13,6 +13,9 @@ set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-i> :IndentGuidesToggle<CR>
+noremap <C-x> :bd<CR>
+noremap <C-c> :Gcommit<CR>
+noremap <C-a> :Gwrite<CR>
 noremap <Left> :bn<CR>
 noremap <Right> :bp<CR>
 let g:netrw_banner = 0
