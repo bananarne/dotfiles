@@ -17,9 +17,6 @@ noremap <C-c> :Gcommit<CR>
 noremap <C-a> :Gwrite<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
-noremap <Right> :bn<CR>
-noremap <Left> :bp<CR>
-noremap <Down> :ls<CR>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
