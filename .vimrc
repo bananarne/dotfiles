@@ -12,12 +12,14 @@ colorscheme apprentice
 set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
-noremap <C-i> :IndentGuidesToggle<CR>
-noremap <C-c> :Gcommit<CR>
-noremap <C-a> :Gwrite<CR>
+noremap <C-g>c :Gcommit<CR>
+noremap <C-g>a :Gwrite<CR>
+noremap <C-g>n :GitGutterNextHunk<CR>
+noremap <C-g>p :GitGutterPrevHunk<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
 noremap ⇒ :cn<CR>
+noremap ℚ :!ctags -R .
 noremap <C-b> :Buffers<CR>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
