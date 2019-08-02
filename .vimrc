@@ -3,6 +3,13 @@ set cmdheight=1
 set shortmess+=IsTWxwrnml
 set number
 set mouse=a
+set wildmenu
+set lazyredraw
+set incsearch
+set ignorecase
+set foldenable
+set relativenumber
+set cursorline
 filetype on
 filetype plugin on
 filetype indent on
@@ -26,6 +33,8 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
+let g:haddock_browser = 'fdhsdhfasdf'
+let g:airline_powerline_fonts = 1
 set termguicolors
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
