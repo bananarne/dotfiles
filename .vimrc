@@ -1,3 +1,6 @@
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+call plug#end()
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set cmdheight=1
 set shortmess+=IsTWxwrnml
@@ -40,3 +43,5 @@ if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
+let g:ale_fix_on_save = 1
+let g:airline#extensions#ale#enabled = 1
