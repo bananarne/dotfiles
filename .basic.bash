@@ -159,6 +159,7 @@ __git_status() {
         echo -ne "\e[38;5;208m[$STATUS]\e[34m "
     fi
 }
+alias please="sudo"
 
 PS1='\[\033]0;\u@\h:\w\007\]'
 PS1+='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(__git_status)\$\[\033[00m\] '
