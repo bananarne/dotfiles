@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
+Plug 'itchyny/vim-haskell-indent'
 call plug#end()
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set cmdheight=1
@@ -11,8 +12,8 @@ set lazyredraw
 set incsearch
 set ignorecase
 set foldenable
-set relativenumber
-set cursorline
+"set relativenumber
+"set cursorline
 filetype on
 filetype plugin on
 filetype indent on
@@ -28,6 +29,8 @@ noremap <C-g>n :GitGutterNextHunk<CR>
 noremap <C-g>p :GitGutterPrevHunk<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
+noremap <C-h> :History:<CR>
+set history=10000
 noremap ⇒ :cn<CR>
 noremap ℚ :!ctags -R .
 noremap <C-b> :Buffers<CR>
@@ -45,3 +48,4 @@ if exists('+termguicolors')
 endif
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
+let g:ale_fixers = {'ruby':['rubocop'], 'javascript': ['prettier', 'eslint']}
