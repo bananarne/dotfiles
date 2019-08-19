@@ -86,11 +86,11 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    #family: Ubuntu Mono
-    family: DejaVu Sans Mono
+    family: Ubuntu Mono
+    #family: DejaVu Sans Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: book
 
   # Point size
   size: 10.0
