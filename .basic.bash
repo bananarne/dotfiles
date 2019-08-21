@@ -156,10 +156,17 @@ __git_status() {
     /^Your branch is ahead of/ {printf("|^")}
     ')
     if [ -n "$STATUS" ]; then
-        echo -ne "\e[38;5;208m[$STATUS]\e[34m "
+        echo -ne "[$STATUS]"
     fi
 }
 alias please="sudo"
 
-PS1='\[\033]0;\u@\h:\w\007\]'
-PS1+='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(__git_status)\$\[\033[00m\] '
+# Decent help article: https://misc.flogisoft.com/bash/tip_colors_and_formatting
+reset='\e[0m'
+bold='\e[1m'
+
+green='\e[32m'
+blue='\e[34m'
+orange='\e[38;5;208m'
+
+PS1="\[$bold\]\[$green\]\u@\h \[$blue\]\w \[$orange\]$(__git_status) \[$blue\]\$\[$reset\] "
