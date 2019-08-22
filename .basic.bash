@@ -156,7 +156,7 @@ __git_status() {
     /^Your branch is ahead of/ {printf("|^")}
     ')
     if [ -n "$STATUS" ]; then
-        echo -ne "[$STATUS]"
+        echo -ne "[$STATUS] "
     fi
 }
 alias please="sudo"
@@ -169,4 +169,4 @@ green='\e[32m'
 blue='\e[34m'
 orange='\e[38;5;208m'
 
-PS1="\[$bold\]\[$green\]\u@\h \[$blue\]\w \[$orange\]$(__git_status) \[$blue\]\$\[$reset\] "
+PS1="\[$bold\]\[$green\]\u@\h \[$blue\]\w \[$orange\]\$(__git_status)\[$blue\]\$\[$reset\] "
