@@ -1,0 +1,22 @@
+{
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-t>": false,
+        "<C-j>": false,
+        "<C-j>": false,
+        "<C-b>": false
+    },
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'Ubuntu Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.dragAndDrop": false,
+    "editor.mouseWheelZoom": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.cursorBlinking": "phase",
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Apprentice",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.lineNumbers": "relative",
+    "files.maxMemoryForLargeFilesMB": 8192,
+    "workbench.activityBar.visible": false,
+}
