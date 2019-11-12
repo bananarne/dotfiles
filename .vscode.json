@@ -6,6 +6,12 @@
         "<C-j>": false,
         "<C-b>": false
     },
+    "ruby.useLanguageServer": true,
+    "vim.visualstar": true,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never",
     "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Ubuntu Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.dragAndDrop": false,
@@ -21,5 +27,5 @@
     "workbench.activityBar.visible": false,
     "git.autofetch": true,
     "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
