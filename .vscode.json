@@ -19,4 +19,7 @@
     "editor.lineNumbers": "relative",
     "files.maxMemoryForLargeFilesMB": 8192,
     "workbench.activityBar.visible": false,
+    "git.autofetch": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
 }
