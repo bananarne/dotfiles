@@ -3,7 +3,6 @@
     "vim.handleKeys": {
         "<C-t>": false,
         "<C-j>": false,
-        "<C-j>": false,
         "<C-b>": false
     },
     "ruby.useLanguageServer": true,
@@ -26,6 +25,10 @@
     "files.maxMemoryForLargeFilesMB": 8192,
     "workbench.activityBar.visible": false,
     "git.autofetch": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "zenMode.centerLayout": false,
+    "git.confirmSync": false,
+    "ruby.format": "rubocop",
+    "ruby.codeCompletion": "rcodetools"
 }
