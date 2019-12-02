@@ -30,5 +30,6 @@
     "zenMode.centerLayout": false,
     "git.confirmSync": false,
     "ruby.format": "rubocop",
-    "ruby.codeCompletion": "rcodetools"
+    "ruby.codeCompletion": "rcodetools",
+    "update.mode": "none"
 }
