@@ -3,6 +3,7 @@
     "vim.handleKeys": {
         "<C-t>": false,
         "<C-j>": false,
+        "<C-k>": false,
         "<C-b>": false
     },
     "ruby.useLanguageServer": true,
