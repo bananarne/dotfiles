@@ -5,7 +5,6 @@
         "<C-k>": false,
         "<C-b>": false
     },
-    "ruby.useLanguageServer": true,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingOvertype": "never",
     "editor.autoClosingQuotes": "never",
@@ -29,9 +28,11 @@
     "zenMode.centerLayout": false,
     "git.confirmSync": false,
     "ruby.format": "rubocop",
-    "ruby.codeCompletion": "rcodetools",
     "update.mode": "none",
     "explorer.confirmDragAndDrop": false,
     "keyboard.dispatch": "keyCode",
     "workbench.startupEditor": "newUntitledFile",
+    "solargraph.checkGemVersion": false,
+    "solargraph.autoformat": true,
+    "solargraph.diagnostics": true
 }
