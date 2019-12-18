@@ -32,5 +32,7 @@
     "git.confirmSync": false,
     "ruby.format": "rubocop",
     "ruby.codeCompletion": "rcodetools",
-    "update.mode": "none"
+    "update.mode": "none",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "newUntitledFile",
 }
