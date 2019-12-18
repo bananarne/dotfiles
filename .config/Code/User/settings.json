@@ -1,5 +1,4 @@
 {
-    "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-t>": false,
         "<C-j>": false,
@@ -7,7 +6,6 @@
         "<C-b>": false
     },
     "ruby.useLanguageServer": true,
-    "vim.visualstar": true,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingOvertype": "never",
     "editor.autoClosingQuotes": "never",
@@ -34,5 +32,6 @@
     "ruby.codeCompletion": "rcodetools",
     "update.mode": "none",
     "explorer.confirmDragAndDrop": false,
+    "keyboard.dispatch": "keyCode",
     "workbench.startupEditor": "newUntitledFile",
 }
