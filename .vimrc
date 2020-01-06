@@ -12,8 +12,8 @@ set lazyredraw
 set incsearch
 set ignorecase
 set foldenable
-"set relativenumber
-"set cursorline
+set relativenumber
+set cursorline
 filetype on
 filetype plugin on
 filetype indent on
@@ -30,6 +30,7 @@ noremap <C-g>p :GitGutterPrevHunk<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
 noremap <C-h> :History:<CR>
+noremap <C-f> :Files<CR>
 set history=10000
 noremap ⇒ :cn<CR>
 noremap ℚ :!ctags -R .
@@ -49,3 +50,22 @@ endif
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_fixers = {'ruby':['rubocop'], 'javascript': ['prettier', 'eslint']}
+
+augroup send_to_term
+  autocmd!
+  autocmd TerminalOpen * if &buftype ==# 'terminal' |
+        \   let t:send_to_term = +expand('<abuf>') |
+        \ endif
+augroup END
+
+function! Send_to_term(keys)
+  let bufnr = get(t:, 'send_to_term', 0)
+  if bufnr > 0 && bufexists(bufnr) && getbufvar(bufnr, '&buftype') ==# 'terminal'
+    let keys = substitute(a:keys, '\n$', '', '')
+    call term_sendkeys(bufnr, keys . "\<cr>")
+  else
+    echom "Error: No terminal"
+  endif
+endfunction
+
+
