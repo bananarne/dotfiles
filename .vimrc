@@ -9,11 +9,11 @@ set number
 set mouse=a
 set wildmenu
 set lazyredraw
+set ttyfast
 set incsearch
 set ignorecase
 set foldenable
-set relativenumber
-set cursorline
+set re=1
 filetype on
 filetype plugin on
 filetype indent on
