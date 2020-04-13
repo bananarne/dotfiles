@@ -167,4 +167,4 @@ bindsym $mod+Shift+Return exec cool-retro-term
 bindsym $mod+b border toggle
 exec pasystray
 exec dunst
-exec xset r rate 150 25
+exec xset r rate 230 60
