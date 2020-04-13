@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
 Plug 'itchyny/vim-haskell-indent'
+Plug 'mxw/vim-jsx'
 call plug#end()
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set cmdheight=1
 set shortmess+=IsTWxwrnml
 set number
@@ -13,6 +14,9 @@ set ttyfast
 set incsearch
 set ignorecase
 set foldenable
+set noswapfile
+set cursorline
+set viminfo='10,\"100,:20,%,n~/.viminfo
 set re=1
 filetype on
 filetype plugin on
