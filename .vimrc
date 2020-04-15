@@ -29,6 +29,7 @@ set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-g>c :Gcommit<CR>
+noremap <C-g>o :Git checkout %<CR>
 noremap <C-g>a :Gwrite<CR>
 noremap <C-g>n :GitGutterNextHunk<CR>
 noremap <C-g>p :GitGutterPrevHunk<CR>
