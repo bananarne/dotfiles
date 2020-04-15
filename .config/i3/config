@@ -160,6 +160,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym F8 exec playerctl next 
+bindsym F9 exec playerctl previous 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Control+L exec i3lock
 bindsym $mod+Control+K exec bash -c "i3lock && sudo pm-suspend"
