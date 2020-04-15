@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
 Plug 'itchyny/vim-haskell-indent'
+Plug 'fszymanski/fzf-quickfix', {'on': 'Quickfix'}
 call plug#end()
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set cmdheight=1
@@ -12,7 +13,6 @@ set lazyredraw
 set ttyfast
 set incsearch
 set ignorecase
-set foldenable
 set re=1
 filetype on
 filetype plugin on
@@ -31,6 +31,7 @@ noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
 noremap <C-h> :History:<CR>
 noremap <C-f> :Files<CR>
+noremap <C-A> :Rg 
 set history=10000
 noremap ⇒ :cn<CR>
 noremap ℚ :!ctags -R .
