@@ -168,3 +168,4 @@ bindsym $mod+b border toggle
 exec pasystray
 exec dunst
 exec xset r rate 230 60
+exec compton
