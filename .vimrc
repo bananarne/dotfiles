@@ -17,7 +17,7 @@ set ignorecase
 set foldenable
 set noswapfile
 set cursorline
-set viminfo='10,\"100,:20,%,n~/.viminfo
+set viminfo='10,\"100,:800,%,n~/.viminfo
 set re=1
 filetype on
 filetype plugin on
