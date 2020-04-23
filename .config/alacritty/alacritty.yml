@@ -85,8 +85,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Ubuntu Mono
-    #family: DejaVu Sans Mono
+    #family: Ubuntu Mono
+    family: DejaVu Sans Mono
 
     # The `style` can be specified to pick a specific face.
     style: book
@@ -130,7 +130,7 @@ font:
 #persistent_logging: false
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night Bright)
 colors:
@@ -152,8 +152,8 @@ colors:
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+    #text: '0x000000'
+    #cursor: '0x3c1f73'
 
   # Normal colors
   normal:
@@ -181,15 +181,15 @@ colors:
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  dim:
-    black:   '0x000000'
-    red:     '0x8c3336'
-    green:   '0x7a8530'
-    yellow:  '0x97822e'
-    blue:    '0x506d8f'
-    magenta: '0x80638e'
-    cyan:    '0x497e7a'
-    white:   '0x9a9a9a'
+  #dim:
+  #  black:   '0x000000'
+  #  red:     '0x8c3336'
+  #  green:   '0x7a8530'
+  #  yellow:  '0x97822e'
+  #  blue:    '0x506d8f'
+  #  magenta: '0x80638e'
+  #  cyan:    '0x497e7a'
+  #  white:   '0x9a9a9a'
 
   # Indexed Colors
   #
@@ -231,7 +231,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1
+background_opacity: 0.9
 
 # Mouse bindings
 #
