@@ -32,7 +32,7 @@ set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-g>c :Gcommit<CR>
-noremap <C-g>g :Gstatus>
+noremap <C-g>g :Gstatus<CR>
 noremap <C-g>h :Git checkout %<CR>
 noremap <C-g>a :Gwrite<CR>
 noremap <C-g>s :Gstatus<CR>
