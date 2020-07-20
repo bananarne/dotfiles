@@ -3,6 +3,8 @@ Plug 'dense-analysis/ale'
 Plug 'itchyny/vim-haskell-indent'
 Plug 'fszymanski/fzf-quickfix', {'on': 'Quickfix'}
 Plug 'mxw/vim-jsx'
+Plug 'StanAngeloff/php.vim'
+Plug 'stephpy/vim-php-cs-fixer'
 call plug#end()
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set cmdheight=1
@@ -12,7 +14,8 @@ set mouse=a
 set wildmenu
 set lazyredraw
 set ttyfast
-set incsearch
+set noincsearch
+set relativenumber
 set ignorecase
 set foldenable
 set noswapfile
@@ -29,8 +32,10 @@ set hidden
 noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-g>c :Gcommit<CR>
-noremap <C-g>o :Git checkout %<CR>
+noremap <C-g>g :Gstatus>
+noremap <C-g>h :Git checkout %<CR>
 noremap <C-g>a :Gwrite<CR>
+noremap <C-g>s :Gstatus<CR>
 noremap <C-g>n :GitGutterNextHunk<CR>
 noremap <C-g>p :GitGutterPrevHunk<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
