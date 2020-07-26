@@ -6,6 +6,7 @@ Plug 'mxw/vim-jsx'
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set cmdheight=1
@@ -34,7 +35,7 @@ noremap <C-p> :Files<CR>
 noremap <C-t> :Tags<CR>
 noremap <C-g>c :Gcommit<CR>
 noremap <C-g>g :Gstatus<CR>
-noremap <C-g>h :Git checkout %<CR>
+noremap <C-g>d :Gdiff<CR>
 noremap <C-g>a :Gwrite<CR>
 noremap <C-g>s :Gstatus<CR>
 noremap <C-g>n :GitGutterNextHunk<CR>
@@ -43,7 +44,7 @@ noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
 noremap <C-h> :History:<CR>
 noremap <C-f> :Files<CR>
-noremap <C-A> :Rg 
+noremap <C-A> :Rg -uuu
 set history=10000
 noremap ⇒ :cn<CR>
 noremap ℚ :!ctags -R .
@@ -91,3 +92,4 @@ augroup Binary
   au BufWritePost *.bin if &bin | %!xxd
   au BufWritePost *.bin set nomod | endif
 augroup END
+autocmd BufWritePost * GitGutter
