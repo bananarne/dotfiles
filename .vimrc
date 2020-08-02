@@ -40,6 +40,7 @@ noremap <C-g>a :Gwrite<CR>
 noremap <C-g>s :Gstatus<CR>
 noremap <C-g>n :GitGutterNextHunk<CR>
 noremap <C-g>p :GitGutterPrevHunk<CR>
+noremap <C-g><C-p> :Gpush<CR>
 noremap <C-k>t :NERDTreeToggle<CR>
 noremap <C-k>f :NERDTreeFind<CR>
 noremap <C-h> :History:<CR>
