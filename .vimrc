@@ -7,8 +7,12 @@ Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/mattn/webapi-vim'
+Plug 'mattn/vim-gist'
 call plug#end()
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set cmdheight=1
 set shortmess+=IsTWxwrnml
 set number
@@ -57,6 +61,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 let g:haddock_browser = 'fdhsdhfasdf'
 let g:airline_powerline_fonts = 1
+let g:gitgutter_max_signs = 1
 set termguicolors
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"

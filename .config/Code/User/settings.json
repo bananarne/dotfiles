@@ -1,5 +1,6 @@
 {
     "vim.handleKeys": {
+    
         "<C-t>": false,
         "<C-j>": false,
         "<C-k>": false,
@@ -10,7 +11,7 @@
     "editor.autoClosingQuotes": "never",
     "editor.autoSurround": "never",
     "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "'Ubuntu Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Fira Code', 'Ubuntu Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.dragAndDrop": false,
     "editor.mouseWheelZoom": true,
     "editor.scrollBeyondLastLine": false,
@@ -21,7 +22,6 @@
     "editor.renderControlCharacters": true,
     "editor.lineNumbers": "relative",
     "files.maxMemoryForLargeFilesMB": 8192,
-    "workbench.activityBar.visible": false,
     "git.autofetch": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -30,9 +30,15 @@
     "ruby.format": "rubocop",
     "update.mode": "none",
     "explorer.confirmDragAndDrop": false,
-    "keyboard.dispatch": "keyCode",
     "workbench.startupEditor": "newUntitledFile",
     "solargraph.checkGemVersion": false,
     "solargraph.autoformat": true,
-    "solargraph.diagnostics": true
+    "solargraph.diagnostics": true,
+    "search.useIgnoreFiles": false,
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0,
+    "editor.wordWrap": "off",
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.defaultDateFormat": "YYYY-MM-DD",
+    "gitlens.defaultTimeFormat": "HH•MM",
 }
